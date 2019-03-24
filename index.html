@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <input type="number" name="temp" id="tempInput" placeholder="Enter Temperature">
-    <input id="toCelsius" type="radio" name="ok"> C
-    <input id="toFahrenheit" type="radio" name="ok"> F
-    
-    <button id="convertBtn" placeholder="Convert"> Convert </button>
-    
-    <button id="clearAll"> Clear </button>
 
-    <div id="outputTemp"> </div>
+    <div id="title">Temperature Converter</div>
 
+    <div id="container">
+        <input type="number" name="temp" id="tempInput" placeholder="Enter Temperature">
+        <input id="toCelsius" type="radio" name="ok"> C
+        <input id="toFahrenheit" type="radio" name="ok"> F
+    </div>
+
+
+    <div id = "btnContainer">
+        <button id="convertBtn" placeholder="Convert"> Convert </button>
+        
+        <button id="clearAll"> Clear </button>
+
+    </div>
+    <div id="outputBtn">
+        <div id="outputTemp"> </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
