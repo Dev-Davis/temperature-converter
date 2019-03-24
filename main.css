@@ -1,3 +1,32 @@
 body {
     
 }
+
+#tempInput, #title {
+    font-size: 22px;
+}
+
+#convertBtn {
+    font-size: 22px;
+    border-radius: 7px;
+    border: 1px solid black;
+    box-shadow: -3 -4 7 red;
+    margin: auto;
+}
+
+#clearAll {
+    font-size: 22px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+
+#outputTemp {
+    font-size: 20px;
+    /* border: 1px solid black; */
+    padding: 7px;
+}
+
+#btnContainer, #container {
+    margin-top: 17px;
+}
+
