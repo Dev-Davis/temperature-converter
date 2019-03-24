@@ -13,12 +13,40 @@ const output = document.getElementById('outputTemp');
 const clrBtn = document.getElementById('clearAll');
 let valueTemp = 0;
 
+// Variable color
+
+// const inputColor = () => {
+
+//     let color = 'green';
+//     if (valueTemp > 32) {
+//         color = 'red';
+//     }
+//     else if (valueTemp < 0) {
+//         color = 'blue';
+//     }
+//     output.style.color = color;
+// };
+
+// const inputColor2 = () => {
+
+//     let color = 'green';
+//     if(valueTemp > 90){
+//        color = 'red';
+//     }
+//     else if (valueTemp < 32){
+//         color = 'blue';
+//     }
+//     output.style.color = color;
+// }
+
 // To Celsius temperature
 
-const toCelsius = () => {
+const toCelsius = (inputColor) => {
    valueTemp = (document.getElementById('tempInput').value - 32)*(5/9);
+   finalTemp = `<h3>${valueTemp} degrees C</h3>`;
 
    let color = 'green';
+
    if(valueTemp > 32){
        color = 'red';
    }
@@ -26,16 +54,17 @@ const toCelsius = () => {
        color = 'blue';
    }
    output.style.color = color;
-   finalTemp = `<h2>${valueTemp} degrees C</h2>`
 
 };
 
 // To Fahrenheit temperature
 
-const toFahrenheit = () => {
+const toFahrenheit = (inputColor2) => {
    valueTemp = (document.getElementById('tempInput').value * (9/5))+32;
+   finalTemp = `<h3>${valueTemp} degrees F</h3>`;
 
    let color = 'green';
+
    if(valueTemp > 90){
        color = 'red';
    }
@@ -43,9 +72,12 @@ const toFahrenheit = () => {
        color = 'blue';
    }
    output.style.color = color;
-   finalTemp = `<h2>${valueTemp} degrees C</h2>`
 
 };
+
+// Color variable 
+
+
 
 const determineConverter = () => {
    if(celsius.checked){
